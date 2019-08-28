@@ -10,4 +10,6 @@ if (!defined('__CONFIG__')) {
 
 include_once"classes/db.php";
 
- ?>
+$con = DB::getConnection();
+
+ ?> 
