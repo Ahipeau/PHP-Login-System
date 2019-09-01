@@ -5,6 +5,14 @@
 	// Require the config
 	require_once "inc/config.php"; 
 
+	/*$pass = "Ahipeau0305!";
+	echo $pass; 
+	echo "<br>";
+
+	$password = password_hash($pass, PASSWORD_DEFAULT);
+	echo $password;
+	exit();*/
+
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +25,7 @@
 
     <title>Page Title</title>
 
-      <base href="/" />
+      <!-- <base href="/" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
   </head>
 
