@@ -1,19 +1,28 @@
- <?php
+<?php 
 
-//If there is the contant defined called _CONFIG_
-if (!defined('__CONFIG__')) {
-	# code...
-	exit ('You do not have a config file');
-}
+	// If there is no constant defined called __CONFIG__, do not load this file 
+	if(!defined('__CONFIG__')) {
+		exit('You do not have a config file');
+	}
 
-//
+	// Sessions are always turned on
+	if(!isset($_SESSION)) {
+		session_start();
+	}
 
-/*error_reporting(-1);
-ini_sert('display_errors', 'On');
-*/
-include_once"classes/db.php";
-include_once"classes/Filter.php";
+	// Our config is below
+	// Allow errors
+	error_reporting(-1);
+	ini_set('display_errors', 'On');
+	
 
-$con = DB::getConnection();
+	// Include the DB.php file;
+	include_once "classes/DB.php";
+	include_once "classes/Filter.php";
+	include_once "classes/Page.php";
+	include_once "classes/User.php";
+	include_once "functions.php";
 
- ?> 
+	$con = DB::getConnection();
+
+?>

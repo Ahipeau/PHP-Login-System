@@ -1,14 +1,14 @@
- <?php
- //Allow the config
-define('__CONFIG__', true);
+<?php 
 
-//require config file
-require_once "inc/config.php";
+	// Allow the config
+	define('__CONFIG__', true);
+	// Require the config
+	require_once "inc/config.php"; 
 
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,35 +16,23 @@ require_once "inc/config.php";
 
     <title>Page Title</title>
 
-    <!-- <base href="/" /> -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css" />
-
+    <base href="/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
   </head>
 
   <body>
 
   	<div class="uk-section uk-container">
-
   		<?php 
-  		echo "Hello world. Today is ";
-  		echo date("d m Y");
-
-  		?>
+  			echo "Hello world. Today is: ";
+  			echo date("Y m d");
+  		?> 
   		<p>
-  		<a href="login.php">Login</a>
-  		<a href="register.php">Register</a>
-
+  			<a href="/login.php">Login</a>
+  			<a href="/register.php">Register</a>
   		</p>
-  		
-
- 
- 		
-
   	</div>
 
-  	<?php require_once "inc/footer.php"; ?>
-
-
-
+  	<?php require_once "inc/footer.php"; ?> 
   </body>
 </html>
